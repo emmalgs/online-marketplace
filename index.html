@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boogie Boards</title>
+</head>
+<body>
+    <form>
+        <select name="whiteboard" id="whiteboard">
+            <option value="">Please select your board</option>
+            <option value="1">Baby's First Whiteboard</option>
+            <option value="2">Rainbow Board</option>
+            <option value="3">Big Boy Board</option>
+            <option value="4">Cadillac Board</option>
+        </select>
+        <br>
+        <br>
+        <label for="name">Enter name:</label>
+        <input type="text" id="name" name="name" placeholder="First and Last Name">
+        <br>
+        <br>
+        <label for="creditcard">Enter Credit Card Number</label>
+        <input type="text" id="creditcard" name="creditcard">
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv">
+        <br>
+        <br>
+        <label for="zipcode">Zip Code:</label>
+        <input type="text" id="zipcode" name="zipcode">
+        <br>
+        <br>
+        <label for="shipping">Shipping Address:</label>
+        <input type="text" id="shipping" name="shipping">
+        <br>
+        <br>
+        <button type="submit"> Submit</button>        
+    </form>
+
+    <p id="price" class="hidden">Total Price</p>
+</body>
+</html>
