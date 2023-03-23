@@ -12,10 +12,10 @@
     <form>
         <select name="whiteboard" id="whiteboard">
             <option value="">Please select your board</option>
-            <option value="1">Baby's First Whiteboard</option>
-            <option value="2">Rainbow Board</option>
-            <option value="3">Big Boy Board</option>
-            <option value="4">Cadillac Board</option>
+            <option value="1" data-cost="455.98">Baby's First Whiteboard $455.98</option>
+            <option value="2" data-cost="589.89">Rainbow Board $589.89</option>
+            <option value="3" data-cost="784.98">Big Boy Board $784.98</option>
+            <option value="4" data-cost="1400.34">Cadillac Board $1400.34</option>
         </select>
         <br>
         <br>
@@ -40,6 +40,15 @@
         <button type="submit"> Submit</button>        
     </form>
 
-    <p id="price" class="hidden">Total Price</p>
+    <div id="receipt" class="hidden">
+        <h3>RECEIPT</h3>
+    </div>
+    <p id="thanks"></p>
+    <p>Whiteboard Selection: <span id="boardtype">____________________</span></p>
+    <p>Price <span id="price">____________________</span></p>
+    <p>Credit Card No. <span id="ccnumber">____________________</span></p>
+    <p>Shipping Address: <span id="shipaddress">____________________</span></p>
+    <p>Discount: <span id="discount">____________________</span></p>
+    <p>Final Price: <span id="finalprice">____________________</span></p>
 </body>
 </html>
