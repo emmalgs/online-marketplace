@@ -9,8 +9,9 @@
     <title>Boogie Boards</title>
 </head>
 <body>
+    <div class="main-container">
     <h1>Booogie Boards</h1>
-    <form>
+    <form id="form-body">
         <select name="whiteboard" id="whiteboard">
             <option value="">Please select your board</option>
             <option value="1" id="wb1" data-cost="455.98">Baby's First Whiteboard $455.98</option>
@@ -18,38 +19,34 @@
             <option value="3" id="wb3" data-cost="784.98">Big Boy Board $784.98</option>
             <option value="4" id="wb4" data-cost="1400.34">Cadillac Board $1400.34</option>
         </select>
-        <br>
-        <br>
-        <label for="name">Enter name:</label>
-        <input type="text" id="name" name="name" placeholder="First and Last Name">
-        <br>
-        <br>
-        <label for="creditcard">Enter Credit Card Number</label>
-        <input type="text" id="creditcard" name="creditcard">
-        <label for="cvv">CVV:</label>
-        <input type="text" id="cvv" name="cvv">
-        <br>
-        <br>
-        <label for="zipcode">Zip Code:</label>
-        <input type="text" id="zipcode" name="zipcode">
-        <br>
-        <br>
-        <label for="shipping">Shipping Address:</label>
-        <input type="text" id="shipping" name="shipping">
-        <br>
-        <br>
+        <label for="name">Full name:
+            <input type="text" id="name" name="name" placeholder="First and Last Name">
+        </label>
+        <label for="creditcard">Credit Card Number:
+            <input type="text" id="creditcard" name="creditcard">
+        </label>
+        <label for="cvv">CVV:
+            <input type="text" id="cvv" name="cvv">
+        </label>
+        <label for="zipcode">Zip Code:
+            <input type="text" id="zipcode" name="zipcode">
+        </label>
+        <label for="shipping">Shipping Address:
+            <input type="text" id="shipping" name="shipping">
+        </label>
         <button type="submit"> Submit</button>        
     </form>
+</div>
 
-    <div id="receipt" class="hidden">
+    <div id="receipt" class="">
         <h3>RECEIPT</h3>
         <p id="thanks"></p>
-        <p>Whiteboard Selection: <span id="boardtype">____________________</span></p>
-        <p>Price <span id="price">____________________</span></p>
-        <p>Credit Card No. <span id="ccnumber">____________________</span></p>
-        <p>Shipping Address: <span id="shipaddress">____________________</span></p>
-        <p>Discount: <span id="discount">____________________</span></p>
-        <p>Final Price: <span id="finalprice">____________________</span></p>
+        <p>Whiteboard Selection: <span id="boardtype"></span></p>
+        <p>Price <span id="price"></span></p>
+        <p>Credit Card No. <span id="ccnumber"></span></p>
+        <p>Shipping Address: <span id="shipaddress"></span></p>
+        <p>Discount: <span id="discount"></span></p>
+        <p>Final Price: <span id="finalprice"></span></p>
 </div>
 </body>
 </html>
